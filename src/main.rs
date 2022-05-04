@@ -1,5 +1,14 @@
-mod algorithm;
+use yew::prelude::*;
 
 fn main() {
-    println!("Hello World!");
+    yew::start_app::<App>();
+}
+
+#[function_component(App)]
+fn app() -> Html {
+    html! {
+        <>
+            <h1>{ "Algorithm and Data Structures Visualizer" }</h1>
+        </>
+    }
 }
